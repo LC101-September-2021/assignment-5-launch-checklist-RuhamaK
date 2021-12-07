@@ -16,7 +16,7 @@ window.addEventListener("load", function() {
           
     let form = document.querySelector("form");
     form.addEventListener("submit", function(event) {
-   
+    list.style.visibility = "hidden";
        
             if (pilotNameInput.value === ""|| copilotNameInput.value === "" || fuelLevelInput.value === "" || cargoMassInput.value === ""){
                 alert ("All fields are required!");
