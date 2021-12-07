@@ -29,7 +29,7 @@ else if (isNaN(testInput) === true){
     return "Not a Number";
 }
 else { 
-    return "Is a number";
+    return "Is a Number";
 }
 }
 
@@ -46,30 +46,30 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         list.style.visibility = "visible";
         fuelStatus.innerHTML = "Fuel level too low for launch";
         cargoStatus.innerHTML = "Cargo mass low enough for launch";
-        h2.innerHTML = "Shuttle not ready for launch";
+        h2.innerHTML = "Shuttle Not Ready for Launch";
         h2.style.color = "rgb(199, 37, 78)";
-        pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch.`;
-        copilotStatus.innerHTML = `Co - pilot ${copilot} is ready for launch.`;
+        pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`;
+        copilotStatus.innerHTML = `Co - pilot ${copilot} is ready for launch`;
        }
        
        else if (cargoLevel > 10000){
         list.style.visibility = "visible";
         fuelStatus.innerHTML = "Fuel level high enough for launch";
         cargoStatus.innerHTML = "Cargo mass too heavy for launch";
-        h2.innerHTML = "Shuttle not ready for launch";
+        h2.innerHTML = "Shuttle Not Ready for Launch";
         h2.style.color = "rgb(199, 37, 78)";
-        pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch.`;
-        copilotStatus.innerHTML = `Co - pilot ${copilot} is ready for launch.`;
+        pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`;
+        copilotStatus.innerHTML = `Co - pilot ${copilot} is ready for launch`;
        }
   
        else {
         list.style.visibility = "visible";
         fuelStatus.innerHTML = "Fuel level high enough for launch";
         cargoStatus.innerHTML = "Cargo mass low enough for launch";
-        h2.innerHTML = "Shuttle is ready for launch";
+        h2.innerHTML = "Shuttle is Ready for Launch";
         h2.style.color = "rgb(65, 159, 106)";
-        pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch.`;
-        copilotStatus.innerHTML = `Co - pilot ${copilot} is ready for launch.`;       
+        pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`;
+        copilotStatus.innerHTML = `Co - pilot ${copilot} is ready for launch`;       
     }    
  }
    
