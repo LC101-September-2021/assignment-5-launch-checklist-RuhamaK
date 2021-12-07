@@ -13,10 +13,12 @@ window.addEventListener("load", function() {
     let fuelLevelInput = document.querySelector("input[name = fuelLevel]");
     let cargoMassInput= document.querySelector("input[name = cargoMass]");
     let  list =  document.getElementById("faultyItems");
+
+    list.style.visibility = "hidden";
           
     let form = document.querySelector("form");
     form.addEventListener("submit", function(event) {
-    list.style.visibility = "hidden";
+    
        
             if (pilotNameInput.value === ""|| copilotNameInput.value === "" || fuelLevelInput.value === "" || cargoMassInput.value === ""){
                 alert ("All fields are required!");
